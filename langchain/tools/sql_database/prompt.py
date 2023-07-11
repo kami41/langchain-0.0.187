@@ -2,7 +2,7 @@
 QUERY_CHECKER = """
 {query}
 Double check the {dialect} query above for common mistakes, including:
-- Using IS NOT NULL instead of NOT IN for handling NULL values
+- Using NOT IN with NULL values (consider using IS NOT NULL instead)
 - Using UNION when UNION ALL should have been used
 - Using BETWEEN for exclusive ranges
 - Data type mismatch in predicates
